@@ -10,7 +10,7 @@
  */
 
 function evenOrOdd(number: number) {
-  // implemente sua lógica aqui
+  return "par"
 }
 
 // Execute seus testes 👇
