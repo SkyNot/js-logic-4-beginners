@@ -9,10 +9,6 @@
  * - Para o número 3, a saída deve ser "ímpar".
  */
 
-function evenOrOdd(number: number) {
-  return "par"
-}
-
 // Execute seus testes 👇
 
 describe("Verificar Número Par ou Ímpar", () => {
