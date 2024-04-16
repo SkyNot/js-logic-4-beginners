@@ -9,6 +9,14 @@
  * - Para o número 3, a saída deve ser "ímpar".
  */
 
+function evenOrOdd(number: number){
+if (number % 2 === 0){
+  return "par";
+}else{
+  return "ímpar";
+}
+}
+
 // Execute seus testes 👇
 
 describe("Verificar Número Par ou Ímpar", () => {
