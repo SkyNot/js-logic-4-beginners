@@ -9,8 +9,12 @@
  * - Para o número 3, a saída deve ser "ímpar".
  */
 
-function evenOrOdd(number: number) {
-  // implemente sua lógica aqui
+function evenOrOdd(number: number){
+  if (number % 2 === 0){
+    return "par"
+  }else{
+    return "ímpar"
+  }
 }
 
 // Execute seus testes 👇
