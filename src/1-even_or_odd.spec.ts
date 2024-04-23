@@ -11,9 +11,9 @@
 
 function evenOrOdd(number: number){
   if (number % 2 === 0){
-    return "par"
+    return "par";
   }else{
-    return "ímpar"
+    return "ímpar";
   }
 }
 
