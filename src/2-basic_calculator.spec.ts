@@ -15,7 +15,22 @@
 type Operation = "adição" | "subtração" | "multiplicação" | "divisão";
 
 function basicCalculator(num1: number, num2: number, operation: Operation) {
-  // implemente sua lógica aqui
+  switch (operation) {
+    case "adição":
+      return num1 + num2;
+    case "subtração":
+      return num1 - num2;
+    case "multiplicação":
+      return num1 * num2;
+    case "divisão":
+      if (num2 !== 0) {
+        return num1 / num2;
+      } else {
+        return "error divisão por zero";
+      }
+    default:
+      return "error: operação inválida.";
+  }
 }
 
 // Execute seus testes 👇
