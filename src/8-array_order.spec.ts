@@ -10,8 +10,21 @@
  * - Para o array [3, 2, 1], a saída deve ser [1, 2, 3].
  */
 
-function orderArray(numbers: number[]) {
-  // implemente sua lógica aqui
+function orderArray(numbers: number[]): number[] {
+  const n = numbers.length;
+  let temp: number;
+
+  for (let i = 0; i < n - 1; i++) {
+    for (let j = 0; j < n - i - 1; j++) {
+      if (numbers[j] > numbers[j + 1]) {
+        temp = numbers[j];
+        numbers[j] = numbers[j + 1];
+        numbers[j + 1] = temp;
+      }
+    }
+  }
+
+  return numbers;
 }
 
 // Execute seus testes 👇
