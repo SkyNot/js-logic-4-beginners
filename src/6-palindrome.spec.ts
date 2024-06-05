@@ -12,8 +12,16 @@
  * - Para a string "12345", a saída deve ser false.
  */
 
-function isPalindrome(str: string) {
-  // implemente sua lógica aqui
+function isPalindrome(str: string): boolean {
+  const len = str.length;
+
+  for (let i = 0; i < len / 2; i++) {
+    if (str[i] !== str[len - i - 1]) {
+      return false;
+    }
+  }
+
+  return true;
 }
 
 // Execute seus testes 👇
