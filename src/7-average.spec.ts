@@ -12,8 +12,15 @@
  * Dica: utilize o método reduce para somar todos os elementos do array.
  */
 
-function average(numbers: number[]) {
-  // implemente sua lógica aqui
+function average(numbers: number[]): number {
+  if (numbers.length === 0) {
+    return 0;
+  }
+  let sum = 0;
+  for (let i = 0; i < numbers.length; i++) {
+    sum += numbers[i];
+  }
+  return sum / numbers.length;
 }
 
 // Execute seus testes 👇
