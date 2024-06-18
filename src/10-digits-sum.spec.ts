@@ -11,8 +11,13 @@
  * É possivel resolver este exercício sem o uso de strings?
  */
 
-function digitsSum(number: number) {
-  // implemente sua lógica aqui
+function digitsSum(number: number): number {
+  let sum = 0;
+  while (number > 0) {
+    sum += number % 10;
+    number = (number - (number % 10)) / 10;
+  }
+  return sum;
 }
 
 // Execute seus testes 👇
