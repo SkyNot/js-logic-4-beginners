@@ -15,12 +15,12 @@
  * - Para a função que converte Fahrenheit para Celsius, a entrada 32 deve retornar 0.
  */
 
-function celsiusToFahrenheit(celsius: number) {
-  // implemente sua lógica aqui
+function celsiusToFahrenheit(celsius: number): number {
+  return celsius * 9 / 5 + 32;
 }
 
-function fahrenheitToCelsius(fahrenheit: number) {
-  // implemente sua lógica aqui
+function fahrenheitToCelsius(fahrenheit: number): number {
+  return (fahrenheit - 32) * 5 / 9;
 }
 
 // Execute seus testes 👇
